@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="edad" id="label">Escriba su edad</label>
+    <input type="text" id="edad">
+    <button id="aceptar">Aceptar</button>
+
+    <script>
+        var idioma;
+        var nombre;
+                nombre = prompt ('¿Cual es tu nombre ?')
+                idioma = prompt('1-Español 2-Inglés');
+                
+                switch (idioma)
+                {
+                    case '1':
+                    document.write('Hola ');
+                    document.write(nombre);
+                    break;
+
+                    case '2': 
+                    document.write('Hello ');
+                    document.write(nombre);
+                    
+
+                    default: 
+                    alert('Pofavor escoja una opcion');
+                }
+                
+
+                
+
+        document.getElementById("aceptar").addEventListener("click", function () {
+
+            var edad = document.getElementById("edad").value;
+            console.log(edad);
+
+            if (edad > 18) {
+                alert('Eres mayor de edad');
+            }
+
+            else if (edad<18){
+                alert('Eres menor de edad');
+            }
+
+            
+            else {
+                alert('Porfavor digite una edad valida');
+            }
+
+
+        });
+    </script>
+</body>
+
+</html>

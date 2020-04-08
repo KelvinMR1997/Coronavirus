@@ -7,11 +7,23 @@
 </head>
 <body>
     <img id="imagen" src="img/img.jpg" alt="" width="400">
+     <button id="btn1">Mostrar</button>
+     <button id="btn2">Ocultar</button>
 
     <script src="js/jquery.min.js"></script>
 
     <script>
-        $
+  $(function(){
+
+        $('#btn1').click(function(){
+            $('#imagen').slideDown(2000);
+        });
+
+        $('#btn2').click(function(){
+            $('#imagen').slideUp(2000);
+        })
+
+     });
     </script>
 
 </body>

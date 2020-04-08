@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <br>
+
+<!-- HTML -->
+    <h1 class="saludo">
+        Hola, SENA.
+    </h1>
+    <p id="parrafo" class="saludo ocultar">
+        Saludo a todos
+    </p>
+
+    <div> Aqui está el div</div>
+
+<!-- Javascript -->
+    <script src="js/jquery.min.js" ></script>
+
+    <script>
+        $(function(){
+            var numbers=[1,2,4,4,4,6,67,3,4,5];
+            document.write("Recorriendo el vector </br> </br>")
+            $.each(numbers, function(i,value){
+                console.log(i+":"+value);
+                document.write(i+":"+value+ "</br>");
+            });
+        });
+    </script>
+</body>
+</html>

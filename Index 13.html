@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <br>
+
+    <!-- HTML -->
+    <h1 class="saludo">
+        Hola, SENA.
+    </h1>
+    <p id="parrafo" class="saludo ocultar">
+        Saludo a todos
+    </p>
+    <img src="img/img.jpg" id="imagen" alt="">
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+
+            $('#imagen').click(function(){
+                var h = $('#imagen').height();
+                alert(h);
+                var hn = $('#imagen').height(400);
+                aler(hn);
+
+             });
+        });
+
+    </script>
+</body>
+
+</html>

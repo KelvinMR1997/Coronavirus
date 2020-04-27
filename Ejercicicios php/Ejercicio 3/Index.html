@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="php/programa.php" method='post' name="IMC">
+            <label for="N-paciente">Nombre del paciente: </label>
+            <input type="text" id="N-paciente" name="N-paciente" value="" placeholder="Juancho">
+            <br>
+            <br>
+            <label for="peso">Peso en kilogramos: </label>
+            <input type="text" id="peso" name="peso" placeholder="70kg">
+            <br>
+            <br>
+
+            <label for="estatura">Estatura en metros: </label>
+            <input type="number" step="any" id="estatura" name="estatura" placeholder="1.70">
+
+            <br>
+            <br>
+            <button class="boton" >ENVIAR</button>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
